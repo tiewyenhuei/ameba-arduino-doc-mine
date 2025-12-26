@@ -7,15 +7,14 @@ Pro2 to AMB82 mini adaptor board
 
 Adapter Board Information
 ---------
-|image01|  pins identities
+|image01|
 
-|image02|  quick map of AMB82-Mini
+|image02|
 
 
 Connecting the AMB82-Mini to the Adapter Board
 ---------
 |image03|
-Front view AMB82, Back View AMB82, Front View of Board
 
 
 Modifying SDK for sensor control
@@ -34,7 +33,7 @@ g_video_peri_info.pwr_ctrl_pin = PIN_F2;
 
 .. note :: Comment out PIN_A5 and use PIN_F2 instead
 
-|image04| code snippet of video_api  
+|image04|
 
 Method 2
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -50,7 +49,7 @@ gpio_write(&gpio_amb82_gpio, 1);
 
 For example in mmf2_video_example_v1, we can insert this block right after calling "atcmd_userctrl_init();".
 
-|image05| code snippet of mmf example v1
+|image05|
 
 
 Modifying SDK for IR control
@@ -95,3 +94,4 @@ Similarly, do remember to comment out the functions related to the ambient light
 
 .. |image05| image:: ../../../_static/adapterboard/mmf2videoexamplev1snippet.png
    
+
