@@ -9,7 +9,7 @@ Adapter Board Information
 ---------
 |image01|
 
-|image02| <https://ameba-doc-arduino-sdk.readthedocs-hosted.com/en/latest/ameba_pro2/amb82-mini/Getting_Started/Getting%20Started%20with%20Ameba.html>
+|image02| `<https://ameba-doc-arduino-sdk.readthedocs-hosted.com/en/latest/ameba_pro2/amb82-mini/Getting_Started/Getting%20Started%20with%20Ameba.html>`_
 
 
 Connecting the AMB82-Mini to the Adapter Board
@@ -98,11 +98,7 @@ Similarly, do remember to comment out the functions related to the ambient light
 
 .. |image05| image:: ../../../_static/adapterboard/mmf2videoexamplev1snippet.png
    
-.. code-block:: bash
 
-   export PATH=<PATH_TO_YOUR_TOOLCHAIN>/asdk-10.3.0/linux/newlib/bin:$PATH
-
-.. note :: You can add PATH to ~/.bash_profile
 
 
 
