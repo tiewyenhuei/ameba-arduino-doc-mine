@@ -9,7 +9,7 @@ Adapter Board Information
 ---------
 |image01|
 
-|image02| `<https://ameba-doc-arduino-sdk.readthedocs-hosted.com/en/latest/ameba_pro2/amb82-mini/Getting_Started/Getting%20Started%20with%20Ameba.html>`_
+|image02|
 
 
 Connecting the AMB82-Mini to the Adapter Board
@@ -90,7 +90,7 @@ Similarly, do remember to comment out the functions related to the ambient light
 .. |image01| image::  ../../../_static/adapterboard/adapterboardpins.jpg
 
 .. |image02| image:: ../../../_static/adapterboard/pinoutamb82.png
-:target: https://ameba-doc-arduino-sdk.readthedocs-hosted.com/en/latest/ameba_pro2/amb82-mini/Getting_Started/Getting%20Started%20with%20Ameba.html
+   :target: https://ameba-doc-arduino-sdk.readthedocs-hosted.com/en/latest/ameba_pro2/amb82-mini/Getting_Started/Getting%20Started%20with%20Ameba.html
 
 .. |image03| image:: ../../../_static/adapterboard/adapterboardconnections.jpg
 
@@ -98,6 +98,7 @@ Similarly, do remember to comment out the functions related to the ambient light
 
 .. |image05| image:: ../../../_static/adapterboard/mmf2videoexamplev1snippet.png
    
+
 
 
 
