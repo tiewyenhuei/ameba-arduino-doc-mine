@@ -26,6 +26,7 @@ Method 1
 Modify the function "video_init_peri()" in "{SDK}/component/video/driver/RTL8735B/video_api.c".
 
 .. code-block:: c
+
 /*
 g_video_peri_info.pwr_ctrl_pin = PIN_A5;
 */
@@ -41,6 +42,7 @@ Method 2
 Add the GPIO control before the video opens.
 
 .. code-block:: c
+
 static gpio_t gpio_amb82_gpio;
 gpio_init(&gpio_amb82_gpio, PIN_F2);
 gpio_dir(&gpio_amb82_gpio, PIN_OUTPUT);
@@ -59,6 +61,7 @@ If you are not using an ambient light sensor, you should comment out the followi
 This is to avoid any I2C errors when using AT commands or function calls to control the IR.
 
 .. code-block:: c
+
 // ambient_light_sensor_init(NULL);
 // ambient_light_sensor_power(1);
 
@@ -78,6 +81,7 @@ An example of these functions being used can be found in the "function sensor_bo
 /video_example_media_framework.c". Before you can use this function in the video examples, you must change the following in "{SDK}/project/realtek_amebapro2_v0_example/inc/platform_opts.h"
 
 .. code-block:: c
+
 "#define CONFIG_RTK_EVB_IR_CTRL 2"
 
 Similarly, do remember to comment out the functions related to the ambient light sensor.
@@ -94,5 +98,6 @@ Similarly, do remember to comment out the functions related to the ambient light
 
 .. |image05| image:: ../../../_static/adapterboard/mmf2videoexamplev1snippet.png
    
+
 
 
