@@ -27,10 +27,10 @@ Modify the function "video_init_peri()" in "{SDK}/component/video/driver/RTL8735
 
 .. code-block:: c
 
-/*
-g_video_peri_info.pwr_ctrl_pin = PIN_A5;
-*/
-g_video_peri_info.pwr_ctrl_pin = PIN_F2;
+  /*
+  g_video_peri_info.pwr_ctrl_pin = PIN_A5;
+  */
+  g_video_peri_info.pwr_ctrl_pin = PIN_F2;
 
 .. note :: Comment out PIN_A5 and use PIN_F2 instead
 
@@ -43,11 +43,11 @@ Add the GPIO control before the video opens.
 
 .. code-block:: c
 
-static gpio_t gpio_amb82_gpio;
-gpio_init(&gpio_amb82_gpio, PIN_F2);
-gpio_dir(&gpio_amb82_gpio, PIN_OUTPUT);
-gpio_mode(&gpio_amb82_gpio, PullNone);
-gpio_write(&gpio_amb82_gpio, 1);
+  static gpio_t gpio_amb82_gpio;
+  gpio_init(&gpio_amb82_gpio, PIN_F2);
+  gpio_dir(&gpio_amb82_gpio, PIN_OUTPUT);
+  gpio_mode(&gpio_amb82_gpio, PullNone);
+  gpio_write(&gpio_amb82_gpio, 1);
 
 For example in mmf2_video_example_v1, we can insert this block right after calling "atcmd_userctrl_init();".
 
@@ -62,8 +62,8 @@ This is to avoid any I2C errors when using AT commands or function calls to cont
 
 .. code-block:: c
 
-// ambient_light_sensor_init(NULL);
-// ambient_light_sensor_power(1);
+  // ambient_light_sensor_init(NULL);
+  // ambient_light_sensor_power(1);
 
 AT commands for IR control
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -82,7 +82,7 @@ An example of these functions being used can be found in the "function sensor_bo
 
 .. code-block:: c
 
-"#define CONFIG_RTK_EVB_IR_CTRL 2"
+  "#define CONFIG_RTK_EVB_IR_CTRL 2"
 
 Similarly, do remember to comment out the functions related to the ambient light sensor.
 
@@ -103,6 +103,7 @@ Similarly, do remember to comment out the functions related to the ambient light
    export PATH=<PATH_TO_YOUR_TOOLCHAIN>/asdk-10.3.0/linux/newlib/bin:$PATH
 
 .. note :: You can add PATH to ~/.bash_profile
+
 
 
 
