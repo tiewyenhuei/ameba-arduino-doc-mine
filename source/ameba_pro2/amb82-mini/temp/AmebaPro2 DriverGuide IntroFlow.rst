@@ -41,7 +41,6 @@ Driver file location
 ~~~~~~~~~~~~~~~~~~~~~~
 The path to the camera sensor driver related binary files can all be found in
 
-
 "{SDK}/component/soc/8735b/fwlib/rtl8735b/lib/source/ram/video/voe_bin".
 This is where users should put the camera sensor drivers in after creating them, then do a clean build afterwards. AT commands can be used to verify the version of drivers used by sending "ATII=version".
 
@@ -126,6 +125,7 @@ An example using sc2333 looks like this,
 .. |image13| image:: ../../../_static/images/introflow/fcsfolder.jpg
 
 .. |image14| image:: ../../../_static/images/introflow/fcsexmaple.jpg
+
 
 
 
