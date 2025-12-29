@@ -42,20 +42,20 @@ Driver file location
 The path to the camera sensor driver related binary files can all be found in "{SDK}/component/soc/8735b/fwlib/rtl8735b/lib/source/ram/video/voe_bin".
 This is where users should put the camera sensor drivers in after creating them, then do a clean build afterwards. AT commands can be used to verify the version of drivers used by sending "ATII=version".
 
-|image 06|
+|image06|
 
-|image 07|
+|image07|
 
 Users should also ensure that driver version and SDK version are either the same or compatible. Users can check ((((insert link to sensor driver)))) for the latest sensor driver environments.
 Some examples of logs for version checks:
 
 Log when apply ISP
 
-|image 08|
+|image08|
 
 Log when using command
 
-|image 09|
+|image09|
 
 How to Add Sensor Drivers
 ---------
@@ -66,15 +66,15 @@ Download the VOE code base version that is compatible with the SDK used.
 Add a new sensor driver if needed, please refer to ((((insert link)))) for more information.
 Output the sensor driver bin and VOE bin then copy the necessary binary files into the "voe_bin" folder in the SDK.
 
-|image 10|
+|image10|
 
 
 Let's take sc2333 for example. First, copy and rename a folder from the same vendor to sc2333. Open the sensor driver folder and replace the sensor name with sc2333.
 Next, we need to modify the configuration for the VOE code base in "source/sensor/Makefile"
 
-|image 11|
+|image11|
 
-|image 12|
+|image12|
 
 Finally, compile and check the output bin, it should now have the normal driver file named "sensor_sc2333.bin". Further details on how to edit the driver parameters can be found in another guide here ((insert link to part 2))
 
@@ -87,10 +87,10 @@ Use the following command to output FCS driver,
     ./fcs_g.exe
 
 The output should look like this. 
-|image 13|
+|image13|
 
 An example using sc2333 looks like this,
-|image 14|
+|image14|
 
 
 
@@ -121,6 +121,7 @@ An example using sc2333 looks like this,
 .. |image13| image:: ../../../_static/images/introflow/fcsfolder.jpg
 
 .. |image14| image:: ../../../_static/images/introflow/fcsexmaple.jpg
+
 
 
 
