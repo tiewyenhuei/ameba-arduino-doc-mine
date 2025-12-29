@@ -43,6 +43,7 @@ The path to the camera sensor driver related binary files can all be found in "{
 This is where users should put the camera sensor drivers in after creating them, then do a clean build afterwards. AT commands can be used to verify the version of drivers used by sending "ATII=version".
 
 |image 06|
+
 |image 07|
 
 Users should also ensure that driver version and SDK version are either the same or compatible. Users can check ((((insert link to sensor driver)))) for the latest sensor driver environments.
@@ -115,5 +116,6 @@ An example using sc2333 looks like this,
 .. |image12| image:: ../../../_static/images/introflow/makeimage.jpg
 
 .. |image13| image:: ../../../_static/images/introflow/fcsfolder.jpg
+
 
 .. |image14| image:: ../../../_static/images/introflow/fcsexmaple.jpg
