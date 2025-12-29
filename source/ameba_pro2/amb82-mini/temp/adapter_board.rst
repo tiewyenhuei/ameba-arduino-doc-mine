@@ -32,8 +32,7 @@ Modify the function "video_init_peri()" in "{SDK}/component/video/driver/RTL8735
   */
   g_video_peri_info.pwr_ctrl_pin = PIN_F2;
 
-.. note :: 
-  Comment out PIN_A5 and use PIN_F2 instead
+.. note ::  Comment out PIN_A5 and use PIN_F2 instead
 
 |image04|
 
