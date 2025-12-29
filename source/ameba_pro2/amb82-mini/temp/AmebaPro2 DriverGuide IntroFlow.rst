@@ -50,9 +50,11 @@ Users should also ensure that driver version and SDK version are either the same
 Some examples of logs for version checks:
 
 Log when apply ISP
+
 |image 08|
 
 Log when using command
+
 |image 09|
 
 How to Add Sensor Drivers
@@ -99,7 +101,7 @@ An example using sc2333 looks like this,
 
 .. |image04| image:: ../../../_static/images/introflow/selist.jpg
 
-.. |image05| image:: ../../../_static/images/introflow/senmax fcs iq.jpg
+.. |image05| image:: ../../../_static/images/introflow/senmaxfcsiq.jpg
 
 .. |image06| image:: ../../../_static/images/introflow/voebin.jpg
 
@@ -117,5 +119,5 @@ An example using sc2333 looks like this,
 
 .. |image13| image:: ../../../_static/images/introflow/fcsfolder.jpg
 
-
 .. |image14| image:: ../../../_static/images/introflow/fcsexmaple.jpg
+
