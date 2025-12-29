@@ -48,9 +48,9 @@ This is where users should put the camera sensor drivers in after creating them,
 |image07|
 
 Users should also ensure that driver version and SDK version are either the same or compatible. Users can check ((((insert link to sensor driver)))) for the latest sensor driver environments.
-Some examples of logs for version checks:
+Some examples of output logs for version check:
 
-Log when apply ISP
+Log when applying ISP
 
 |image08|
 
@@ -124,6 +124,7 @@ An example using sc2333 looks like this,
 .. |image13| image:: ../../../_static/images/introflow/fcsfolder.jpg
 
 .. |image14| image:: ../../../_static/images/introflow/fcsexmaple.jpg
+
 
 
 
