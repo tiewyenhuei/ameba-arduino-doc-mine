@@ -35,7 +35,7 @@ In the same "sensor.h", users can customize the sensors used and which configura
 "SENSOR_MAX" can be set up to a maximum of 9 with an additional dummy set that can be omitted. The user has to define the specific driver index to be used. Then select whether to enable FCS mode for start up and which IQ configuration is to be used.
 It is best to follow the naming rule that is, for example the GC20253 camera sensor will have the normal driver named as "sensor_gc2053.bin". Its corresponding FCS driver is "fcs_data_gc2053.bin" and its IQ will be "iq_gc2053.bin". If the IQ binary cannot be found, the default "iq.bin" will be used instead.
 
-|image05| senmax fcs iqbin
+|image05|
 
 Driver file location
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -44,6 +44,7 @@ This is where users should put the camera sensor drivers in after creating them,
 
 |image 06|
 
+|image 07|
 
 Users should also ensure that driver version and SDK version are either the same or compatible. Users can check ((((insert link to sensor driver)))) for the latest sensor driver environments.
 Some examples of logs for version checks:
@@ -119,5 +120,6 @@ An example using sc2333 looks like this,
 .. |image13| image:: ../../../_static/images/introflow/fcsfolder.jpg
 
 .. |image14| image:: ../../../_static/images/introflow/fcsexmaple.jpg
+
 
 
