@@ -1,4 +1,4 @@
-Pro2 to AMB82 mini adaptor board 
+Introduction to Camera Sensor Start Up Flow
 ========================================
 
 .. contents::
@@ -123,6 +123,7 @@ An example using sc2333 looks like this,
 .. |image13| image:: ../../../_static/images/introflow/fcsfolder.jpg
 
 .. |image14| image:: ../../../_static/images/introflow/fcsexmaple.jpg
+
 
 
 
