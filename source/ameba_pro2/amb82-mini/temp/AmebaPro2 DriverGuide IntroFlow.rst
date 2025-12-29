@@ -73,6 +73,7 @@ Let's take sc2333 for example. First, copy and rename a folder from the same ven
 Next, we need to modify the configuration for the VOE code base in "source/sensor/Makefile"
 
 |image 11|
+
 |image 12|
 
 Finally, compile and check the output bin, it should now have the normal driver file named "sensor_sc2333.bin". Further details on how to edit the driver parameters can be found in another guide here ((insert link to part 2))
@@ -120,6 +121,7 @@ An example using sc2333 looks like this,
 .. |image13| image:: ../../../_static/images/introflow/fcsfolder.jpg
 
 .. |image14| image:: ../../../_static/images/introflow/fcsexmaple.jpg
+
 
 
 
