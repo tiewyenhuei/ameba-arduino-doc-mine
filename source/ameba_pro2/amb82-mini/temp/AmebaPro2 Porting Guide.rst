@@ -66,6 +66,7 @@ get_tuned_again
 get_exposure_gain_info
 ~~~~~~~~~~~~~~~~~~~~~~
 |image09|
+
 set_mirror_flip
 ~~~~~~~~~~~~~~~~~~~~~~
 |image10|
@@ -73,6 +74,7 @@ set_mirror_flip
 sc2333_check
 ~~~~~~~~~~~~~~~~~~~~~~
 In this function, it is important to change to the name of the camera sensor that is being used and ensure that the id matches the sensor's.
+
 |image11|
 
 Debug Flow
