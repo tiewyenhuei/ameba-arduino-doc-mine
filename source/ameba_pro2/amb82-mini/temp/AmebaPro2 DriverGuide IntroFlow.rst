@@ -87,9 +87,11 @@ Use the following command to output FCS driver,
     ./fcs_g.exe
 
 The output should look like this. 
+
 |image13|
 
 An example using sc2333 looks like this,
+
 |image14|
 
 
@@ -121,6 +123,7 @@ An example using sc2333 looks like this,
 .. |image13| image:: ../../../_static/images/introflow/fcsfolder.jpg
 
 .. |image14| image:: ../../../_static/images/introflow/fcsexmaple.jpg
+
 
 
 
