@@ -1,4 +1,4 @@
-Introduction to Camera Sensor Start Up Flow
+Introduction to AmebaPro2 Flow
 ========================================
 
 .. contents::
