@@ -11,11 +11,11 @@ General Sensor Start Up Flow
 |image01|
 
 Users will need to ensure that they have the following documents from the vendor before getting started:
-    * Sensor Specifications
-    * Initial Configuration
-    * Application Note
-    * Module Design Guide
-    * Sensor Board
+* Sensor Specifications
+* Initial Configuration
+* Application Note
+* Module Design Guide
+* Sensor Board
 
 
 Sensor Power On Sequence 
@@ -23,34 +23,34 @@ Sensor Power On Sequence
 
 First, begin with the power on sequence for the start up flow. Check the sensor's specifications for the following information. (Using GC2053 as an example)
 
-    * Power Domain (Check sensor AVDD / DVDD / DOVDD)
-    |image02|
+* Power Domain (Check sensor AVDD / DVDD / DOVDD)
+|image02|
 
-    * Power On Sequence
-        #. Enable Power
-        #. Set GPIO to control Reset and PWDN Pin
-        #. Set MCLK (Refer to the initial table)
-        #. Write sensor's initial setting (via I2C)
+* Power On Sequence
+    #. Enable Power
+    #. Set GPIO to control Reset and PWDN Pin
+    #. Set MCLK (Refer to the initial table)
+    #. Write sensor's initial setting (via I2C)
 
-    |image03|
+|image03|
 
-    * Check that the Power On Sequence is ready using I2C communication through the Sensor ID.
+* Check that the Power On Sequence is ready using I2C communication through the Sensor ID.
 
 Example of the sensor specifications:
 
-    * MCLK - typically set at 24/27 MHz
-    |image04|
+* MCLK - typically set at 24/27 MHz
+|image04|
 
-    * I2C
-        * Slave Address
-        |image05|
+* I2C
+    * Slave Address
+    |image05|
 
-        * I2C prototype
-            * Address length 2/1 byte
-            * Data length 2/1 byte
+    * I2C prototype
+        * Address length 2/1 byte
+        * Data length 2/1 byte
 
-    * Sensor ID
-    |image06| 
+* Sensor ID
+|image06| 
 
 
 Set Initial Configuration
@@ -77,10 +77,13 @@ Now verify that the RX configuration is ready by checking the MIPI debug registe
 The AT command to check for this is
 
 .. code-block:: bash
+
     ATII=info,mipi
 
 The resulting counts from each of the three registers should be non-zero. For example,
+
 .. code-block:: bash
+
     frame_cnt: 0x000000EE (238)
     pixel_cnt: 0x000001FB (507)
     line_cnt: 0x00000788 (1928)
@@ -147,6 +150,7 @@ Check ISP RX Configuration
 In general, once the sensor starts up successfully and the ISP is receiving image from the sensor and it will output the frames.
 
 Where could it go wrong?
+
 * In some special cases, the ISP may not receive the image due to:
     * Distance between sensor and controller is too long
     * MIPI TX and RX configurations is/are wrong (eg. data lane 0 (TX) -> data lane 1 (RX))
