@@ -39,10 +39,12 @@ First, begin with the power on sequence for the start up flow. Check the sensor'
 Example of the sensor specifications:
 
 * MCLK - typically set at 24/27 MHz
+
   |image04|
 
 * I2C
     * Slave Address
+      
       |image05|
 
     * I2C prototype
@@ -50,6 +52,7 @@ Example of the sensor specifications:
         * Data length 2/1 byte
 
 * Sensor ID
+
   |image06| 
 
 
@@ -193,4 +196,5 @@ Where could it go wrong?
 .. |image15| image:: ../../../_static/images/startupflow/bayer.jpg
 
 .. |image16| image:: ../../../_static/images/startupflow/sendatasheet2.jpg
+
 
