@@ -24,7 +24,7 @@ Sensor Power On Sequence
 First, begin with the power on sequence for the start up flow. Check the sensor's specifications for the following information. (Using GC2053 as an example)
 
 * Power Domain (Check sensor AVDD / DVDD / DOVDD)
-|image02|
+  |image02|
 
 * Power On Sequence
     #. Enable Power
@@ -32,25 +32,25 @@ First, begin with the power on sequence for the start up flow. Check the sensor'
     #. Set MCLK (Refer to the initial table)
     #. Write sensor's initial setting (via I2C)
 
-|image03|
+  |image03|
 
 * Check that the Power On Sequence is ready using I2C communication through the Sensor ID.
 
 Example of the sensor specifications:
 
 * MCLK - typically set at 24/27 MHz
-|image04|
+  |image04|
 
 * I2C
     * Slave Address
-    |image05|
+      |image05|
 
     * I2C prototype
         * Address length 2/1 byte
         * Data length 2/1 byte
 
 * Sensor ID
-|image06| 
+  |image06| 
 
 
 Set Initial Configuration
@@ -109,7 +109,8 @@ Check Sensor Power
 ~~~~~~~~~~~~~~~~~~~~~~
 Understand the general power on sequence by checking the sensor datasheet.
 
-Using GC3003 as an example
+Using GC3003 as an example,
+
 |image08|
 
 |image16|
@@ -122,14 +123,14 @@ Some sensors have specific order for which power lines to be powered first.
     * Check the sequence of AVDD / DOVDD / DVDD
     * Check charging time for each power if using RC instead of LDO or DCDC
     * Check the power conditions for power lines
-    |image10| pwrlines
+      |image10|
 
 
 Check Reset Flow
 ~~~~~~~~~~~~~~~~~~~~~~
 Check the RST, PWDN and MCLK pins. These three pins have specific uses and cannot be modified.
 
-|image11| pinout
+|image11|
 
 The AmebaPro2 only supports a 3.3V for sensor gpio. If the sensor cannot support a 3.3V input, a level shift is needed to adjust the voltage between sensor and controller.
 Ensure the correct voltage levels on the three pins and that the MCLK should be at 24M or 27M.
@@ -192,3 +193,4 @@ Where could it go wrong?
 .. |image15| image:: ../../../_static/images/startupflow/bayer.jpg
 
 .. |image16| image:: ../../../_static/images/startupflow/sendatasheet2.jpg
+
