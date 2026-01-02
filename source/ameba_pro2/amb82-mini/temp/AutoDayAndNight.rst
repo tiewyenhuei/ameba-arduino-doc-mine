@@ -87,6 +87,7 @@ Code Reference
 The Infrared class controls all the manual IR features of the AmebaPro2 while the AmbientLightSensor class controls the software and hardware ALS for auto mode switching. You will need to the following lines before you can begin using any IR and ALS features.
 
 .. code:: c
+
     #include "Infrared.h"
     #include "AmbientLightSensor.h"
 
@@ -178,4 +179,5 @@ The difference in detail can be seen after the LED's brightness is lowered in th
 .. |image13| image::  ../../../_static/images/autodayandnight/inverse.jpg
 
 .. |image14| image::  ../../../_static/images/autodayandnight/autopwm.jpg
+
 
