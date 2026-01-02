@@ -21,13 +21,13 @@ Our Amebapro LED board has a built-in hardware Ambient Light Sensor (ALS) so if 
 
 You can find this particular example under "Files" -> "Examples" -> "StreamRTSP" -> "AutoDayAndNight" from the top left corner of the ArduinoIDE.
 
-|image01| wheretofind
+|image01|
 
 The adapter board has a power enable pin which we will be connecting with the GPIO Pin F2 on the AMB82-mini. The IR cut and LED will both be controlled by GPIO Pins F12 and F13 respectively. Pin F12 will connect to the pin TP1 and F13 will connect to pin TP2 on the adapter board.
 
-|image02| pincon1
+|image02|
 
-|image03| pincon2
+|image03|
 
 If you are using the adapter board ensure that this is in the example before running it.
 
@@ -86,7 +86,7 @@ Code Reference
 
 The Infrared class controls all the manual IR features of the AmebaPro2 while the AmbientLightSensor class controls the software and hardware ALS for auto mode switching. You will need to the following lines before you can begin using any IR and ALS features.
 
-.. code:: cpp
+.. code:: c
 
     #include "Infrared.h"
     #include "AmbientLightSensor.h"
@@ -179,6 +179,7 @@ The difference in detail can be seen after the LED's brightness is lowered in th
 .. |image13| image::  ../../../_static/images/autodayandnight/inverse.jpg
 
 .. |image14| image::  ../../../_static/images/autodayandnight/autopwm.jpg
+
 
 
 
