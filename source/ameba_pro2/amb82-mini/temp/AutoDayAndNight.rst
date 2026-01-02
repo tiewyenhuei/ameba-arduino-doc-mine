@@ -154,7 +154,7 @@ The difference in detail can be seen after the LED's brightness is lowered in th
 |image14|
 
 
-.. |image01| image::  ../../../_static/images/autodayandnight/wheretofind.jpg
+.. |image01| image::  ../../../_static/images/autodayandnight/wheretofind.png
 .. |image02| image::  ../../../_static/images/autodayandnight/pincon1.jpg
 .. |image03| image::  ../../../_static/images/autodayandnight/pincon2.jpg
 .. |image04| image::  ../../../_static/images/autodayandnight/adapteri2c.jpg
@@ -167,4 +167,5 @@ The difference in detail can be seen after the LED's brightness is lowered in th
 .. |image11| image::  ../../../_static/images/autodayandnight/streamxmp.png
 .. |image12| image::  ../../../_static/images/autodayandnight/streamxmp2.png
 .. |image13| image::  ../../../_static/images/autodayandnight/inverse.jpg
+
 .. |image14| image::  ../../../_static/images/autodayandnight/autopwm.jpg
