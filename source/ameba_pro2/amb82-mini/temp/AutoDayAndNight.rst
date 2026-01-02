@@ -158,8 +158,17 @@ The difference in detail can be seen after the LED's brightness is lowered in th
 .. |image02| image::  ../../../_static/images/autodayandnight/pincon1.jpg
 .. |image03| image::  ../../../_static/images/autodayandnight/pincon2.jpg
 .. |image04| image::  ../../../_static/images/autodayandnight/adapteri2c.jpg
-.. |image05| image::  ../../../_static/images/autodayandnight/amebai2c.jpg  
+   :width:  700 px
+   :height:  700 px
+
+.. |image05| image::  ../../../_static/images/autodayandnight/amebai2c.jpg
+   :width:  700 px
+   :height:  700 px
+
 .. |image06| image::  ../../../_static/images/autodayandnight/networkssid.jpg
+   :width:  700 px
+   :height:  700 px
+
 .. |image07| image::  ../../../_static/images/autodayandnight/vlcmedia.png
 .. |image08| image::  ../../../_static/images/autodayandnight/port554.png
 .. |image09| image::  ../../../_static/images/autodayandnight/moreoptions.png
@@ -169,3 +178,4 @@ The difference in detail can be seen after the LED's brightness is lowered in th
 .. |image13| image::  ../../../_static/images/autodayandnight/inverse.jpg
 
 .. |image14| image::  ../../../_static/images/autodayandnight/autopwm.jpg
+
