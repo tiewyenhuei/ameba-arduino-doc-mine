@@ -15,7 +15,7 @@ Materials
 
 Example
 ---------
-This example is built on the `Link "StreamRTSP" -> "VideoOnly" <https://ameba-doc-arduino-sdk.readthedocs-hosted.com/en/latest/ameba_pro2/amb82-mini/Example_Guides/Multimedia/RTSP%20Streaming.html>`_. Please refer to the "VideoOnly" example to learn how to set up an RTSP stream as this guide will focus on the IR-related functions.
+This example is built on the `Link "StreamRTSP" -> "VideoOnly" <https://ameba-doc-arduino-sdk.readthedocs-hosted.com/en/latest/ameba_pro2/amb82-mini/Example_Guides/Multimedia/RTSP%20Streaming.html>`_. Please refer to the "VideoOnly" example for more information on how to set up an RTSP stream.
 
 
 In this example, we will use the AmebaPro2 board to stream video in night mode. This capability requires a camera that has an IR cut filter that can be toggled on and off along with an IR LED light source (or any IR light source).
@@ -23,31 +23,53 @@ The adapter board used in this example is to solely connect our camera sensor to
 
 You can find this particular example under "Files" -> "Examples" -> "StreamRTSP" -> "NightMode" from the top left corner of the ArduinoIDE.
 
-|image01| wheretofind
+|image01|
 
 The adapter board has a power enable pin which we will be connecting with the GPIO Pin F2 on the AMB82-mini. The IR cut and LED will both be controlled by GPIO Pins F12 and F13 respectively. Pin F12 will connect to the pin TP1 and F13 will connect to pin TP2 on the adapter board.
 
-|image02| pincon
+|image02|
+
+|image03|
 
 If you are using the adapter board ensure that this is in the NightMode example before running it.
 
 .. code:: c
-    #define  PWR_EN 9
+    #include "WiFi.h"
+    #include "StreamIO.h"
+    #include "VideoStream.h"
+    #include "RTSP.h"
+    #include "Infrared.h"
+
+    #define CHANNEL 0
+    #define PWR_EN  9
 
     pinMode(PWR_EN, OUTPUT);
     digitalWrite(PWR_EN, HIGH);
 
-Now you just have to edit the network details for the AMB82-mini to open up the RTSP over.
-
-|image03| networkssid
+In the highlighted code snippet, fill in the “ssid” with your WiFi network SSID and “pass” with the network password.
+|image04|
 
 Compile the code and upload it to Ameba. After pressing the Reset button, wait for the AmebaPro2 board to connect to the WiFi network. The board's IP address and network port number for RTSP will be shown in the Serial Monitor.
 
-|image04| vlcmediaplayer
+You may download VLC media player from the link (`here <https://www.videolan.org/vlc/>`_).
 
-|image05| streamexampleblack
+Upon the completion of the software installation, open VLC media player, and go to “Media” -> “Open Network Stream”.
 
-|image06| streamexamplebright
+|image05|
+
+Make sure your PC is connected to the same network as the Ameba Pro2 board for streaming. Since RTSP is used as the streaming protocol, key in `“rtsp://{IPaddress}:{port}”` as the Network URL in VLC media player, replacing {IPaddress} with the IP address of your Ameba Pro2 board, and {port} with the RTSP port shown in Serial Monitor `(e.g., “rtsp://192.168.1.154:554”)`. The default RTSP port number is 554. In the case of two simultaneous RTSP streams, the second port number defaults to 555.
+
+|image06|
+
+You may choose to change the caching time in “Show more options”. A lower cache time will result in reduced video latency but may introduce playback stuttering in the case of poor network conditions.
+
+|image07|
+
+Next, click “Play” to start RTSP streaming. The video stream from the camera will be shown in VLC media player. Meanwhile, in your Serial Monitor, the message “rtp started (UDP)” will appear.
+
+|image08|
+
+|image09|
 
 Code Reference
 ---------
@@ -71,3 +93,14 @@ It is also important to remember to set the camera to grayscale mode for better 
 .. code:: c
     configCam.setGrayMode(1);       # 0 for RGB, 1 for Grayscale
     configCam.setDayNightMode(1);   # 0 for day mode ISP auto-tuning, 1 for night mode ISP auto-tuning
+
+
+.. |image01| image::  ../../../_static/nightmode/wheretofind.jpg
+.. |image02| image::  ../../../_static/nightmode/pincon1.jpg
+.. |image03| image::  ../../../_static/nightmode/pincon2.jpg
+.. |image04| image::  ../../../_static/nightmode/networkssid.jpg
+.. |image05| image::  ../../../_static/nightmode/vlcmedia.png
+.. |image06| image::  ../../../_static/nightmode/port554.png
+.. |image07| image::  ../../../_static/nightmode/moreoptions.png
+.. |image08| image::  ../../../_static/nightmode/rtpudp.png
+.. |image09| image::  ../../../_static/nightmode/grayflower.jpg
