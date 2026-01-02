@@ -95,12 +95,13 @@ It is also important to remember to set the camera to grayscale mode for better 
     configCam.setDayNightMode(1);   # 0 for day mode ISP auto-tuning, 1 for night mode ISP auto-tuning
 
 
-.. |image01| image::  ../../../_static/nightmode/wheretofind.jpg
-.. |image02| image::  ../../../_static/nightmode/pincon1.jpg
-.. |image03| image::  ../../../_static/nightmode/pincon2.jpg
-.. |image04| image::  ../../../_static/nightmode/networkssid.jpg
-.. |image05| image::  ../../../_static/nightmode/vlcmedia.png
-.. |image06| image::  ../../../_static/nightmode/port554.png
-.. |image07| image::  ../../../_static/nightmode/moreoptions.png
-.. |image08| image::  ../../../_static/nightmode/rtpudp.png
-.. |image09| image::  ../../../_static/nightmode/grayflower.jpg
+.. |image01| image::  ../../../_static/images/nightmode/wheretofind.jpg
+.. |image02| image::  ../../../_static/images/nightmode/pincon1.jpg
+.. |image03| image::  ../../../_static/images/nightmode/pincon2.jpg
+.. |image04| image::  ../../../_static/images/nightmode/networkssid.jpg
+.. |image05| image::  ../../../_static/images/nightmode/vlcmedia.png
+.. |image06| image::  ../../../_static/images/nightmode/port554.png
+.. |image07| image::  ../../../_static/images/nightmode/moreoptions.png
+.. |image08| image::  ../../../_static/images/nightmode/rtpudp.png
+.. |image09| image::  ../../../_static/images/nightmode/grayflower.jpg
+
