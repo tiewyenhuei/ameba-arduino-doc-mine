@@ -106,6 +106,7 @@ It is also important to remember to set the camera to grayscale mode for better 
 .. |image06| image::  ../../../_static/images/nightmode/port554.png
 .. |image07| image::  ../../../_static/images/nightmode/moreoptions.png
 .. |image08| image::  ../../../_static/images/nightmode/rtpudp.png
-.. |image09| image::  ../../../_static/images/nightmode/grayflower.jpg
+.. |image09| image::  ../../../_static/images/nightmode/grayscale.jpg
+
 
 
