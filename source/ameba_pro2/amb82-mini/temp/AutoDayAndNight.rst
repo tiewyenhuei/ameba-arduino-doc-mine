@@ -160,25 +160,26 @@ The difference in detail can be seen after the LED's brightness is lowered in th
 .. |image03| image::  ../../../_static/images/autodayandnight/pincon2.jpg
 .. |image04| image::  ../../../_static/images/autodayandnight/adapteri2c.jpg
    :width:  700 px
-   :height:  700 px
+   :height:  600 px
 
 .. |image05| image::  ../../../_static/images/autodayandnight/amebai2c.jpg
    :width:  700 px
-   :height:  700 px
+   :height:  600 px
 
 .. |image06| image::  ../../../_static/images/autodayandnight/networkssid.jpg
    :width:  700 px
-   :height:  700 px
+   :height:  600 px
 
 .. |image07| image::  ../../../_static/images/autodayandnight/vlcmedia.png
 .. |image08| image::  ../../../_static/images/autodayandnight/port554.png
 .. |image09| image::  ../../../_static/images/autodayandnight/moreoptions.png
 .. |image10| image::  ../../../_static/images/autodayandnight/rtpudp.png
 .. |image11| image::  ../../../_static/images/autodayandnight/streamxmp.png
-.. |image12| image::  ../../../_static/images/autodayandnight/streamxmp2.png
+.. |image12| image::  ../../../_static/images/autodayandnight/streamxmp2.jpg
 .. |image13| image::  ../../../_static/images/autodayandnight/inverse.jpg
 
 .. |image14| image::  ../../../_static/images/autodayandnight/autopwm.jpg
+
 
 
 
