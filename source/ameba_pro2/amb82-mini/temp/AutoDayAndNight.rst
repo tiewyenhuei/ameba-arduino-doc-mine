@@ -86,7 +86,7 @@ Code Reference
 
 The Infrared class controls all the manual IR features of the AmebaPro2 while the AmbientLightSensor class controls the software and hardware ALS for auto mode switching. You will need to the following lines before you can begin using any IR and ALS features.
 
-.. code:: c
+.. code:: cpp
 
     #include "Infrared.h"
     #include "AmbientLightSensor.h"
@@ -103,7 +103,7 @@ The Infrared class controls all the manual IR features of the AmebaPro2 while th
 
 First, the IR cut and/or LED has to be initialized before you can use them. After initializing, you can toggle the IR cut using "IR.setCut()" and control the IR LED brightness using "IR.setLedBrightness()".
 
-.. code:: c
+.. code:: cpp
 
     ir.cutInit();               # Initializes GPIO Pin F12
     ir.ledInit();               # Initializes GPIO Pin F13
@@ -179,5 +179,6 @@ The difference in detail can be seen after the LED's brightness is lowered in th
 .. |image13| image::  ../../../_static/images/autodayandnight/inverse.jpg
 
 .. |image14| image::  ../../../_static/images/autodayandnight/autopwm.jpg
+
 
 
